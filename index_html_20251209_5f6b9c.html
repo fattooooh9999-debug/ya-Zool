@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم يا زول - الأكلات السودانية الأصيلة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="يا زول">
+                <span>يا زول</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">عن المطعم</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#beverages">العصائر</a></li>
+                <li><a href="#order">الطلبات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li>
+                    <button class="lang-btn" id="langToggle">
+                        <span class="lang-ar">عربي</span>
+                        <span class="lang-en">English</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-ar="مطعم يا زول" data-en="Ya Zool Restaurant">مطعم يا زول</h1>
+                <p class="hero-subtitle" data-ar="تذوق الأصالة السودانية في كل لقمة" data-en="Taste Sudanese authenticity in every bite">تذوق الأصالة السودانية في كل لقمة</p>
+                <a href="#menu" class="btn-primary" data-ar="استعرض القائمة" data-en="View Menu">استعرض القائمة</a>
+                <a href="#order" class="btn-secondary" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- عن المطعم -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="عن مطعمنا" data-en="About Our Restaurant">عن مطعمنا</h2>
+                <p class="section-subtitle" data-ar="قصة أصالة وطعم لا ينسى" data-en="A story of authenticity and unforgettable taste">قصة أصالة وطعم لا ينسى</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-ar="مطعم 'يا زول' يمزج بين الأصالة السودانية والحداثة في التقديم. نقدم أشهى الأطباق السودانية التقليدية بأجود المكونات وأفضل الطرق الصحية." data-en="'Ya Zool' restaurant blends Sudanese authenticity with modern presentation. We serve the most delicious traditional Sudanese dishes with the finest ingredients and the healthiest methods.">مطعم 'يا زول' يمزج بين الأصالة السودانية والحداثة في التقديم. نقدم أشهى الأطباق السودانية التقليدية بأجود المكونات وأفضل الطرق الصحية.</p>
+                    <p data-ar="نفخر بتقديم المذاق الأصيل الذي يذكرك ببيت العائلة في السودان، مع الاهتمام بجودة الطعام ورضاكم." data-en="We pride ourselves on offering the authentic taste that reminds you of family homes in Sudan, while focusing on food quality and your satisfaction.">نفخر بتقديم المذاق الأصيل الذي يذكرك ببيت العائلة في السودان، مع الاهتمام بجودة الطعام ورضاكم.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3 data-ar="مكونات طازجة" data-en="Fresh Ingredients">مكونات طازجة</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h3 data-ar="وصفات أصلية" data-en="Original Recipes">وصفات أصلية</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <h3 data-ar="توصيل سريع" data-en="Fast Delivery">توصيل سريع</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/hero-bg.jpg" alt="مطعم يا زول">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الطعام -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="قائمة الطعام" data-en="Food Menu">قائمة الطعام</h2>
+                <p class="section-subtitle" data-ar="أشهى الأطباق السودانية الأصيلة" data-en="The most delicious authentic Sudanese dishes">أشهى الأطباق السودانية الأصيلة</p>
+            </div>
+            
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+                <button class="filter-btn" data-filter="main" data-ar="الوجبات الرئيسية" data-en="Main Dishes">الوجبات الرئيسية</button>
+                <button class="filter-btn" data-filter="appetizer" data-ar="المقبلات" data-en="Appetizers">المقبلات</button>
+            </div>
+            
+            <div class="menu-items" id="menuItems">
+                <!-- سيتم ملؤها بالجافاسكريبت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- العصائر -->
+    <section class="beverages section-padding" id="beverages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="العصائر التقليدية" data-en="Traditional Beverages">العصائر التقليدية</h2>
+                <p class="section-subtitle" data-ar="منعشة وطبيعية 100%" data-en="100% Refreshing & Natural">منعشة وطبيعية 100%</p>
+            </div>
+            
+            <div class="beverage-items" id="beverageItems">
+                <!-- سيتم ملؤها بالجافاسكريبت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- الطلبات -->
+    <section class="order section-padding" id="order">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</h2>
+                <p class="section-subtitle" data-ar="توصيل سريع لأي مكان" data-en="Fast delivery anywhere">توصيل سريع لأي مكان</p>
+            </div>
+            
+            <div class="order-container">
+                <div class="order-info">
+                    <h3 data-ar="كيفية الطلب" data-en="How to Order">كيفية الطلب</h3>
+                    <ol>
+                        <li data-ar="اختر الوجبات والعصائر التي تريدها" data-en="Choose the meals and beverages you want">اختر الوجبات والعصائر التي تريدها</li>
+                        <li data-ar="أضفها إلى سلة التسوق" data-en="Add them to your shopping cart">أضفها إلى سلة التسوق</li>
+                        <li data-ar="أكمل معلومات التوصيل والدفع" data-en="Complete delivery and payment information">أكمل معلومات التوصيل والدفع</li>
+                        <li data-ar="استلم طلبك خلال 30-45 دقيقة" data-en="Receive your order within 30-45 minutes">استلم طلبك خلال 30-45 دقيقة</li>
+                    </ol>
+                    
+                    <div class="delivery-areas">
+                        <h4 data-ar="مناطق التوصيل" data-en="Delivery Areas">مناطق التوصيل</h4>
+                        <div class="areas">
+                            <span class="area-tag">الخرطوم</span>
+                            <span class="area-tag">أم درمان</span>
+                            <span class="area-tag">بحري</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-form">
+                    <h3 data-ar="اطلب الآن" data-en="Place Your Order">اطلب الآن</h3>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" placeholder="عنوان التوصيل" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="notes" rows="3" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+                        </div>
+                        
+                        <div class="cart-summary">
+                            <h4 data-ar="سلة التسوق" data-en="Shopping Cart">سلة التسوق</h4>
+                            <div class="cart-items" id="cartItems">
+                                <p class="empty-cart" data-ar="السلة فارغة. أضف بعض الوجبات!" data-en="Cart is empty. Add some meals!">السلة فارغة. أضف بعض الوجبات!</p>
+                            </div>
+                            <div class="cart-total">
+                                <span data-ar="المجموع:" data-en="Total:">المجموع:</span>
+                                <span class="total-amount">0 SDG</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-block" data-ar="أكمل الطلب" data-en="Complete Order">أكمل الطلب</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h2>
+                <p class="section-subtitle" data-ar="نحن هنا لخدمتك" data-en="We are here to serve you">نحن هنا لخدمتك</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-ar="العنوان" data-en="Address">العنوان</h3>
+                            <p data-ar="الخرطوم، السودان" data-en="Khartoum, Sudan">الخرطوم، السودان</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-ar="الهاتف" data-en="Phone">الهاتف</h3>
+                            <p>+249 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
+                            <p>info@yazool.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h3>
+                            <p data-ar="الأحد - الخميس: 8 صباحاً - 11 مساءً" data-en="Sun - Thu: 8 AM - 11 PM">الأحد - الخميس: 8 صباحاً - 11 مساءً</p>
+                            <p data-ar="الجمعة - السبت: 10 صباحاً - 12 منتصف الليل" data-en="Fri - Sat: 10 AM - 12 AM">الجمعة - السبت: 10 صباحاً - 12 منتصف الليل</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p data-ar="خرائط جوجل - موقع المطعم" data-en="Google Maps - Restaurant Location">خرائط جوجل - موقع المطعم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="يا زول">
+                    <h2>يا زول</h2>
+                    <p data-ar="الأصالة السودانية في كل لقمة" data-en="Sudanese authenticity in every bite">الأصالة السودانية في كل لقمة</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#about" data-ar="عن المطعم" data-en="About">عن المطعم</a></li>
+                        <li><a href="#menu" data-ar="قائمة الطعام" data-en="Menu">قائمة الطعام</a></li>
+                        <li><a href="#order" data-ar="الطلبات" data-en="Orders">الطلبات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-ar="جميع الحقوق محفوظة &copy; 2023 مطعم يا زول" data-en="All rights reserved &copy; 2023 Ya Zool Restaurant">جميع الحقوق محفوظة &copy; 2023 مطعم يا زول</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سلة التسوق العائمة -->
+    <div class="floating-cart" id="floatingCart">
+        <button class="cart-toggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </button>
+        
+        <div class="cart-panel">
+            <h3 data-ar="سلة التسوق" data-en="Shopping Cart">سلة التسوق</h3>
+            <div class="cart-panel-items" id="cartPanelItems">
+                <!-- سيتم ملؤها بالجافاسكريبت -->
+            </div>
+            <div class="cart-panel-total">
+                <span data-ar="المجموع:" data-en="Total:">المجموع:</span>
+                <span class="panel-total-amount">0 SDG</span>
+            </div>
+            <a href="#order" class="btn-primary btn-block" data-ar="إتمام الطلب" data-en="Checkout">إتمام الطلب</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
